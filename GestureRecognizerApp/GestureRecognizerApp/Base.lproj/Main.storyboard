@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JamesHetfield" translatesAutoresizingMaskIntoConstraints="NO" id="yF9-yZ-o20">
+                                <rect key="frame" x="33" y="317" width="327" height="331"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="James Hetfield" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ8-Gp-Vub">
+                                <rect key="frame" x="41" y="696" width="310" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="eP1-Sw-UJm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="metallica_logo" translatesAutoresizingMaskIntoConstraints="NO" id="a77-Iy-YF6">
+                                <rect key="frame" x="33" y="105" width="327" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="faj-HB-oSD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a77-Iy-YF6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="4Q5-ww-39E"/>
+                            <constraint firstItem="yF9-yZ-o20" firstAttribute="top" secondItem="a77-Iy-YF6" secondAttribute="bottom" constant="84" id="Ev5-mf-pWI"/>
+                            <constraint firstItem="bQ8-Gp-Vub" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="H0M-IB-CIq"/>
+                            <constraint firstItem="a77-Iy-YF6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="HLn-s4-naR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bQ8-Gp-Vub" secondAttribute="bottom" constant="101" id="IUV-w3-5UN"/>
+                            <constraint firstItem="a77-Iy-YF6" firstAttribute="leading" secondItem="yF9-yZ-o20" secondAttribute="leading" id="OzW-u7-8UA"/>
+                            <constraint firstItem="a77-Iy-YF6" firstAttribute="trailing" secondItem="yF9-yZ-o20" secondAttribute="trailing" id="Y6u-rx-CVQ"/>
+                            <constraint firstItem="yF9-yZ-o20" firstAttribute="centerX" secondItem="bQ8-Gp-Vub" secondAttribute="centerX" id="aTB-ro-R4y"/>
+                            <constraint firstItem="bQ8-Gp-Vub" firstAttribute="top" secondItem="yF9-yZ-o20" secondAttribute="bottom" constant="48" id="igB-XR-uPd"/>
+                            <constraint firstItem="bQ8-Gp-Vub" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xDE-Wk-zEY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="yF9-yZ-o20" id="2dr-ht-yOO"/>
+                        <outlet property="myLabel" destination="bQ8-Gp-Vub" id="Tcx-Jw-MW5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.89312977099236" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="JamesHetfield" width="2000" height="1500"/>
+        <image name="metallica_logo" width="347" height="145"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
